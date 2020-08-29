@@ -35,15 +35,7 @@ def discover():
         if name != 'iPhoneRoom317Greg':
             discover()
         else:
-            changeXML('1')
-            
-    #print(type(nearby_devices[0]))
-    # if bytes("b'F8:2D:7C:26:E0:14'", 'utf-8') == devices[0]:
-    #     print('iPhone found')
-    
-    
-        
-    
+            changeXML('1')    
     
 def changeXML(m):
     tree = ET.parse('communication.xml')
@@ -55,5 +47,4 @@ def changeXML(m):
     os.system('git push')
 
 os.system('clear')
-changeXML('1')
 discover()
