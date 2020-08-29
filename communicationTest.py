@@ -43,7 +43,7 @@ def changeXML(m):
     for message in root.findall('message'):
         message.text = str(m)
         tree.write('communication.xml')
-    os.system("git commmit -am 'update'")
+    os.system("git commit -am 'update'")
     os.system('git push')
 
 os.system('clear')
